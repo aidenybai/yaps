@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "scripts": {
+    "preview": "vite preview",
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^6.0.2"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/USERNAME/PROJECT#readme",
+  "bugs": {
+    "url": "https://github.com/USERNAME/PROJECT/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USERNAME/PROJECT.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./dist/*": "./dist/*.js",
+    "./dist/*.js": "./dist/*.js",
+    "./dist/*.cjs": "./dist/*.cjs",
+    "./dist/*.mjs": "./dist/*.mjs"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "browser": "dist/index.global.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "bin",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production tsup",
+    "dev": "NODE_ENV=development tsup --watch",
+    "lint": "pnpm biome lint --write src/*.ts",
+    "format": "pnpm biome format --write src/*.ts",
+    "check": "pnpm biome check --write src/*.ts",
+    "publint": "publint",
+    "test": "vitest --dom",
+    "coverage": "vitest run --coverage --dom",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@vitest/coverage-istanbul": "2.1.8",
+    "happy-dom": "^16.3.0",
+    "publint": "^0.2.12",
+    "terser": "^5.36.0",
+    "tsup": "^8.2.4",
+    "vitest": "^2.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

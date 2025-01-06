@@ -4,6 +4,8 @@ i got super tired of manually setting up projects every time i start a new one, 
 
 yaps should help you quickly get set up with a typescript web library in less than 2min of setup.
 
+a similar underlying structure is used in [react-scan](https://github.com/aidenybai/react-scan) and [bippy](https://github.com/aidenybai/bippy). it makes me feel super productive and it's not super boilerplate-y so i can can just focus on building stuff, and when it comes time to scale features it's easy to delete/add code.
+
 this is mainly maintained for me and by me, feel free to remix/use it as you see fit.
 
 ## setup

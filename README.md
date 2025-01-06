@@ -1,4 +1,4 @@
-# yaps – yet another project starter
+# <img src="https://github.com/aidenybai/yaps/blob/main/.github/assets/yaps.png?raw=true" width="60" align="center" /> yaps – yet another project starter
 
 i got super tired of manually setting up projects every time i start a new one, so i made this boilerplate.
 
